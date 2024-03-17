@@ -5,3 +5,7 @@
 .custom-content-padding {
   padding: 3rem 1rem 1rem 1rem;
 }
+
+.view-height-100 {
+  min-height: 100vh;
+}

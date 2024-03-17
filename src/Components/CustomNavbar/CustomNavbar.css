@@ -3,12 +3,11 @@
     background-color: white;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .navbar{
-         margin-right: auto!important;
-         margin-left: auto!important;
+
     }
- }
+ } */
 
 .nav-link{
     margin: 0 1rem;
