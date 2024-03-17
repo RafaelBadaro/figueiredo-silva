@@ -1,0 +1,19 @@
+.navbar {
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+@media (min-width: 992px) {
+    .navbar{
+         margin-right: auto!important;
+         margin-left: auto!important;
+    }
+ }
+
+.nav-link{
+    margin: 0 1rem;
+}
+
+.nav-link:hover {
+    box-shadow: inset 0 -3px 0 0 var(--olive); 
+}

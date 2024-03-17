@@ -10,12 +10,16 @@ function CustomNavbar() {
 
     return (
         <>
-            <Navbar expanded={expanded} expand="lg" className="bg-body-tertiary">
+            <Navbar className="navbar" sticky="top" expanded={expanded} expand="lg">
                 <Container>
-                    <Navbar.Brand as={Link} to="/">LOGO</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/">
+                        <img src='https://figueiredosilva.com/wp-content/uploads/thegem-logos/logo_29c56607e6ece180ae3454ed9e880e12_1x.png' 
+                        alt='logo'
+                        />
+                    </Navbar.Brand>
                     <Navbar.Toggle onClick={() => setExpanded(!expanded)} aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav>
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
                             <Nav.Link as={Link} to="/escritorio">Escritorio</Nav.Link>
                             <Nav.Link as={Link} to="/areasDeAtuacao">Areas de Atuacao</Nav.Link>
