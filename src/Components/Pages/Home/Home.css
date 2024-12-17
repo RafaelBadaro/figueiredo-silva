@@ -4,14 +4,11 @@
     background-size: cover;
     background-position: center;
     color: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .custom-link {
-    color: goldenrod; /* Altere a cor do texto */
-    text-decoration: underline; /* Adicione ou remova o sublinhado */
-  }
+    color: goldenrod;
+    /* Altere a cor do texto */
+    text-decoration: underline;
+    /* Adicione ou remova o sublinhado */
+}

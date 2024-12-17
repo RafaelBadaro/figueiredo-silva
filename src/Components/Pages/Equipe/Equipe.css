@@ -1,0 +1,13 @@
+/* Estilos para telas maiores */
+.cards-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;  
+}
+
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+    .cards-layout {
+        flex-direction: column;
+    }
+}

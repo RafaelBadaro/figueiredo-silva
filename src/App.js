@@ -1,6 +1,6 @@
 import './App.css';
 import CustomNavbar from './Components/CustomNavbar/CustomNavbar';
-import CustomFooter from './Components/CustomFooter/CustomFooter';
+// import CustomFooter from './Components/CustomFooter/CustomFooter';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import Home from './Components/Pages/Home/Home'
