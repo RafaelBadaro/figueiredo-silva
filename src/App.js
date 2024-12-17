@@ -25,7 +25,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-    <CustomFooter />
+    {/* <CustomFooter /> */}
   </>
   );
 }
