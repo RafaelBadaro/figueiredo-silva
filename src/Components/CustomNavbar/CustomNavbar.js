@@ -21,10 +21,10 @@ function CustomNavbar() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/escritorio">Escritorio</Nav.Link>
-                            <Nav.Link as={Link} to="/areasDeAtuacao">Areas de Atuacao</Nav.Link>
+                            {/* <Nav.Link as={Link} to="/escritorio">Escritorio</Nav.Link>
+                            <Nav.Link as={Link} to="/areasDeAtuacao">Areas de Atuacao</Nav.Link> */}
                             <Nav.Link as={Link} to="/equipe">Equipe</Nav.Link>
-                            <Nav.Link as={Link} to="/junteseANos">Junte-se a nos</Nav.Link>
+                            {/* <Nav.Link as={Link} to="/junteseANos">Junte-se a nos</Nav.Link> */}
                             <Nav.Link as={Link} to="/contato">Contato</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
