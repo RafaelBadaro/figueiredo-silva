@@ -25,7 +25,8 @@ export default function Contact() {
 
   return (
     <section className="py-32 px-12 bg-white" id="contato">
-      <div className="max-w-[1920px] mx-auto flex flex-col lg:flex-row gap-24">
+      <div className="w-full">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24">
         <div className="lg:w-1/3">
           <h2 className="font-headline text-4xl font-bold mb-8">
             Inicie sua <span className="text-secondary">Consulta Prioritária</span>
@@ -120,6 +121,7 @@ export default function Contact() {
               </button>
             </div>
           </form>
+        </div>
         </div>
       </div>
     </section>

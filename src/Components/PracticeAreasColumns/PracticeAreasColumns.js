@@ -3,7 +3,8 @@ import React from 'react';
 export default function PracticeAreasColumns() {
   return (
     <section className="py-32 bg-surface-container-low px-12" id="areas">
-      <div className="max-w-[1920px] mx-auto">
+      <div className="w-full">
+        <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <h2 className="font-headline text-4xl md:text-5xl text-on-surface font-black">Áreas de Atuação</h2>
         </div>
@@ -123,6 +124,7 @@ export default function PracticeAreasColumns() {
             </div>
           </div>
 
+        </div>
         </div>
       </div>
     </section>

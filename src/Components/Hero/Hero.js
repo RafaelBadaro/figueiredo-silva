@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-24 overflow-hidden" id="inicio">
+    <section className="relative w-screen min-h-screen flex items-center pt-24 overflow-hidden" id="inicio">
       <div className="absolute inset-0 z-0">
         <img
           alt="Escritório de Advocacia Clássico"
@@ -11,8 +11,9 @@ export default function Hero() {
         />
       </div>
       
-      <div className="container mx-auto px-12 relative z-10">
-        <div className="max-w-4xl">
+      <div className="w-full px-12 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-4xl">
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl text-white font-black leading-[1.1] tracking-tight mb-8">
             Excelência Jurídica em <span className="text-secondary">Territórios</span> Complexos.
           </h1>
@@ -33,8 +34,7 @@ export default function Hero() {
               Nossa História
             </a>
           </div>
-        </div>
-      </div>
+        </div>        </div>        </div>
 
       <div className="absolute bottom-0 right-0 w-1/3 h-1 bg-secondary"></div>
     </section>

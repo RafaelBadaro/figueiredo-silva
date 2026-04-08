@@ -3,7 +3,8 @@ import React from 'react';
 export default function About() {
   return (
     <section className="py-32 px-12 bg-surface" id="sobre-nos">
-      <div className="max-w-[1920px] mx-auto flex flex-col lg:flex-row gap-24 items-center">
+      <div className="w-full">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 items-center">
         <div className="lg:w-1/2 relative">
           <div className="absolute -top-12 -left-12 w-64 h-64 bg-surface-container-high z-0"></div>
           <img
@@ -33,8 +34,7 @@ export default function About() {
             <div className="h-px w-24 bg-outline-variant"></div>
             <span className="font-headline font-bold text-primary italic">A Família Figueiredo Silva</span>
           </div>
-        </div>
-      </div>
+        </div>        </div>      </div>
     </section>
   );
 }
