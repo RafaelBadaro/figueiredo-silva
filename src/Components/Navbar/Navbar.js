@@ -12,8 +12,12 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#faf8ff] dark:bg-[#050F21] flex justify-between items-center px-12 py-6 max-w-[1920px] mx-auto transition-all duration-300 shadow-sm">
-      <div className="text-2xl font-headline font-black tracking-tighter text-[#050F21] dark:text-white uppercase">
-        Figueiredo Silva
+      <div className="flex items-center">
+        <img
+          src="/figueiredo-silva-logo.png"
+          alt="Figueiredo Silva Advogados Associados"
+          className="h-16 md:h-24 w-auto"
+        />
       </div>
       
       <div className="hidden md:flex items-center gap-8">

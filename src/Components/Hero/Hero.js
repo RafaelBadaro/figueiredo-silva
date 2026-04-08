@@ -13,9 +13,6 @@ export default function Hero() {
       
       <div className="container mx-auto px-12 relative z-10">
         <div className="max-w-4xl">
-          <span className="font-label text-secondary uppercase tracking-[0.3em] text-sm mb-6 block">
-            Tradição &amp; Agilidade
-          </span>
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl text-white font-black leading-[1.1] tracking-tight mb-8">
             Excelência Jurídica em <span className="text-secondary">Territórios</span> Complexos.
           </h1>
