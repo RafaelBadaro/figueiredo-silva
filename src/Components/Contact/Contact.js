@@ -29,7 +29,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24">
         <div className="lg:w-1/3">
           <h2 className="font-headline text-4xl font-bold mb-8">
-            Inicie sua <span className="text-secondary">Consulta Prioritária</span>
+            Entre em contato
           </h2>
           <p className="text-on-surface-variant mb-12 leading-relaxed">
             Nossa equipe está preparada para oferecer o atendimento ágil e especializado que sua demanda exige. Entre em contato para uma avaliação preliminar.

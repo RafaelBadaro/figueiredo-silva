@@ -30,19 +30,14 @@ export default function Navbar() {
             {link.label}
           </a>
         ))}
-        <a
-          href="#consulta"
-          className="bg-primary text-on-primary px-6 py-2.5 rounded font-label text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-all"
-        >
-          Consulta Prioritária
-        </a>
       </div>
       
       <button
-        className="md:hidden text-primary"
+        className="md:hidden text-slate-200 text-[2.5rem]"
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        aria-label="Abrir menu mobile"
       >
-        <span className="material-symbols-outlined">menu</span>
+        <span className="material-symbols-outlined leading-none">menu</span>
       </button>
 
       {/* Mobile Menu */}
@@ -58,12 +53,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#consulta"
-            className="bg-primary text-white px-4 py-2.5 rounded font-label text-sm font-bold uppercase tracking-widest text-center"
-          >
-            Consulta Prioritária
-          </a>
         </div>
       )}
     </nav>
