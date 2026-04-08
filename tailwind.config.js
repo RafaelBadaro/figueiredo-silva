@@ -1,0 +1,72 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "primary-fixed-dim": "#bdc6df",
+        "surface-container-high": "#e3e7fc",
+        "primary-fixed": "#d9e2fc",
+        "error": "#ba1a1a",
+        "on-tertiary-fixed-variant": "#930000",
+        "on-error-container": "#93000a",
+        "on-primary-fixed-variant": "#3d475b",
+        "surface-container-highest": "#dee2f6",
+        "on-primary-fixed": "#111c2e",
+        "outline": "#75777d",
+        "on-background": "#161b29",
+        "background": "#faf8ff",
+        "surface-tint": "#555e74",
+        "outline-variant": "#c5c6cd",
+        "on-surface-variant": "#45474c",
+        "inverse-surface": "#2b303f",
+        "tertiary": "#000000",
+        "surface-container": "#eaedff",
+        "surface-bright": "#faf8ff",
+        "primary": "#000000",
+        "tertiary-fixed": "#ffdad4",
+        "surface": "#faf8ff",
+        "secondary-fixed": "#ffdf9a",
+        "secondary-fixed-dim": "#ecc158",
+        "on-surface": "#161b29",
+        "secondary-container": "#fed267",
+        "on-tertiary-fixed": "#410000",
+        "on-tertiary-container": "#f93624",
+        "on-primary": "#ffffff",
+        "surface-container-lowest": "#ffffff",
+        "on-primary-container": "#7a849b",
+        "inverse-on-surface": "#eef0ff",
+        "inverse-primary": "#bdc6df",
+        "tertiary-fixed-dim": "#ffb4a8",
+        "surface-container-low": "#f2f3ff",
+        "primary-container": "#111c2e",
+        "on-secondary-fixed": "#251a00",
+        "on-secondary-fixed-variant": "#5a4300",
+        "on-secondary-container": "#765900",
+        "surface-dim": "#d5d9ed",
+        "on-error": "#ffffff",
+        "on-secondary": "#ffffff",
+        "error-container": "#ffdad6",
+        "tertiary-container": "#410000",
+        "secondary": "#775a00",
+        "surface-variant": "#dee2f6",
+        "on-tertiary": "#ffffff"
+      },
+      borderRadius: {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      fontFamily: {
+        headline: ["Noto Serif"],
+        body: ["Public Sans"],
+        label: ["Work Sans"]
+      }
+    },
+  },
+  plugins: [],
+}

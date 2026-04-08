@@ -1,32 +1,31 @@
 import './App.css';
-import CustomNavbar from './Components/CustomNavbar/CustomNavbar';
-// import CustomFooter from './Components/CustomFooter/CustomFooter';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-
-import Home from './Components/Pages/Home/Home'
-// import Escritorio from './Components/Pages/Escritorio/Escritorio'
-// import AreasDeAtuacao from './Components/Pages/AreasDeAtuacao/AreasDeAtuacao'
-import Equipe from './Components/Pages/Equipe/Equipe'
-// import JunteSeANos from './Components/Pages/JunteSeANos/JunteSeANos'
-import Contato from './Components/Pages/Contato/Contato'
+import Navbar from './Components/Navbar/Navbar';
+import Hero from './Components/Hero/Hero';
+import StrategicDifferentiators from './Components/StrategicDifferentiators/StrategicDifferentiators';
+import About from './Components/About/About';
+import PracticeAreas from './Components/PracticeAreas/PracticeAreas';
+import GlobalPresence from './Components/GlobalPresence/GlobalPresence';
+import Testimonial from './Components/Testimonial/Testimonial';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
+import WhatsAppFAB from './Components/WhatsAppFAB/WhatsAppFAB';
 
 function App() {
   return (
-    <>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<CustomNavbar />}>
-          <Route index element={<Home />} />
-          {/* <Route path="escritorio" element={<Escritorio />} />
-          <Route path="areasDeAtuacao" element={<AreasDeAtuacao />} /> */}
-          <Route path="equipe" element={<Equipe />} />
-          {/* <Route path="junteseANos" element={<JunteSeANos />} /> */}
-          <Route path="contato" element={<Contato />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-    {/* <CustomFooter /> */}
-  </>
+    <div className="w-full min-h-screen bg-surface">
+      <Navbar />
+      <main>
+        <Hero />
+        <StrategicDifferentiators />
+        <About />
+        <PracticeAreas />
+        <GlobalPresence />
+        <Testimonial />
+        <Contact />
+      </main>
+      <Footer />
+      <WhatsAppFAB />
+    </div>
   );
 }
 
