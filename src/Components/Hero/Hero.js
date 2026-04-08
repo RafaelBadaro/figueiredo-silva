@@ -7,7 +7,7 @@ export default function Hero() {
         <img
           alt="Escritório de Advocacia Clássico"
           className="w-full h-full object-cover brightness-[0.4]"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFmlKK2Ok52tHXsHArIu4qrhJQPsWvA7i1mv-pQQ34jGHTckHjg1SmbEvzY4hTfVrcT8FJnVbAHVcAH8f_fb9vCbBJd3LBRSIBuZJPQraj5lFfErKKmOZAUUSJejIikhUdoa3ULkiX9hMq9XmGtcJY5Zog8x-04Bo7CxgVsvbvqn1xy9gvUonTFUXLqrxzpexDi8NdWoQKKjUs_hNpCVZAHkET8qbTX7BH1asRz_f09-eSJts-FYxj4ljAt__gBGhY4OWUQrUg81g"
+          src="/capa-hero.jpg"
         />
       </div>
       
