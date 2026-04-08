@@ -1,9 +1,9 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
+import PracticeAreasColumns from './Components/PracticeAreasColumns/PracticeAreasColumns';
 import StrategicDifferentiators from './Components/StrategicDifferentiators/StrategicDifferentiators';
 import About from './Components/About/About';
-import PracticeAreas from './Components/PracticeAreas/PracticeAreas';
 import GlobalPresence from './Components/GlobalPresence/GlobalPresence';
 import Testimonial from './Components/Testimonial/Testimonial';
 import Contact from './Components/Contact/Contact';
@@ -16,9 +16,9 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <PracticeAreasColumns />
         <StrategicDifferentiators />
         <About />
-        <PracticeAreas />
         <GlobalPresence />
         <Testimonial />
         <Contact />

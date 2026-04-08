@@ -5,8 +5,8 @@ export default function Navbar() {
 
   const navLinks = [
     { label: 'Início', href: '#inicio' },
-    { label: 'Sobre Nós', href: '#sobre-nos' },
     { label: 'Áreas de Atuação', href: '#areas' },
+    { label: 'Sobre Nós', href: '#sobre-nos' },
     { label: 'Contato', href: '#contato' },
   ];
 
