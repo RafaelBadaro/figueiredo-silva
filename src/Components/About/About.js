@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
     return (
-        <section className="py-32 px-12 bg-surface" id="quem-somos">
+        <section className="py-32 px-4 md:px-12 bg-surface" id="quem-somos">
             <div className="w-full">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 items-center">
                     {/* Timeline */}
@@ -62,7 +62,7 @@ export default function About() {
                 </div>
 
                 {/* Our team */}
-                <section className="py-32 px-12 bg-surface-container-low">
+                <section className="py-32 px-4 md:px-12 bg-surface-container-low">
                     <div className="max-w-7xl mx-auto">
                         <div className="mb-12">
                             <h2 className="font-headline text-4xl md:text-5xl text-on-surface font-black">Nossa equipe</h2>
