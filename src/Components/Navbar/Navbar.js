@@ -6,7 +6,7 @@ export default function Navbar() {
   const navLinks = [
     { label: 'Início', href: '#inicio' },
     { label: 'Áreas de Atuação', href: '#areas' },
-    { label: 'Sobre Nós', href: '#sobre-nos' },
+    { label: 'Quem somos', href: '#quem-somos' },
     { label: 'Contato', href: '#contato' },
   ];
 
