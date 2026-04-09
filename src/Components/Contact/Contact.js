@@ -1,4 +1,4 @@
-import React from 'react';
+import FormContact from './FormContact';
 
 export default function Contact() {
     return (
@@ -57,50 +57,7 @@ export default function Contact() {
                             <p className="text-sm text-on-surface-variant mb-8 leading-relaxed">
                                 Para qualquer informação, dúvida ou comentário, por favor preencha o formulário:
                             </p>
-                            <div className="space-y-5">
-                                <div className="space-y-1.5">
-                                    <label className="text-xs uppercase tracking-[0.35em] text-on-surface-variant">Seu nome</label>
-                                    <input
-                                        type="text"
-                                        required
-                                        placeholder="Nome completo"
-                                        className="w-full bg-white border border-outline/20 rounded-xl px-4 py-3 text-sm text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary transition-colors"
-                                    />
-                                </div>
-                                <div className="space-y-1.5">
-                                    <label className="text-xs uppercase tracking-[0.35em] text-on-surface-variant">Seu e-mail</label>
-                                    <input
-                                        type="email"
-                                        required
-                                        placeholder="email@exemplo.com"
-                                        className="w-full bg-white border border-outline/20 rounded-xl px-4 py-3 text-sm text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary transition-colors"
-                                    />
-                                </div>
-                                <div className="space-y-1.5">
-                                    <label className="text-xs uppercase tracking-[0.35em] text-on-surface-variant">Assunto</label>
-                                    <input
-                                        type="text"
-                                        required
-                                        placeholder="Assunto da mensagem"
-                                        className="w-full bg-white border border-outline/20 rounded-xl px-4 py-3 text-sm text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary transition-colors"
-                                    />
-                                </div>
-                                <div className="space-y-1.5">
-                                    <label className="text-xs uppercase tracking-[0.35em] text-on-surface-variant">Sua mensagem</label>
-                                    <textarea
-                                        required
-                                        rows={5}
-                                        placeholder="Descreva sua dúvida ou comentário..."
-                                        className="w-full bg-white border border-outline/20 rounded-xl px-4 py-3 text-sm text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary transition-colors resize-none"
-                                    />
-                                </div>
-                                <button
-                                    type="submit"
-                                    className="w-full bg-primary text-white font-label font-bold text-sm uppercase tracking-widest py-4 rounded-xl hover:opacity-90 transition-opacity"
-                                >
-                                    Enviar mensagem
-                                </button>
-                            </div>
+                            <FormContact />
                         </div>
 
                     </div>
