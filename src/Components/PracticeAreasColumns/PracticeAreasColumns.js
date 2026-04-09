@@ -9,36 +9,38 @@ export default function PracticeAreasColumns() {
                         <h2 className="font-headline text-4xl md:text-5xl text-on-surface font-black">Áreas de Atuação</h2>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+                    {/* Areas de atuacao */}
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-12">
+                        {[
+                            'Justiça Comum',
+                            'Justiça Federal',
+                            'Juizados Especiais',
+                            'Tribunais Superiores',
+                            'Órgão Especial TJMG',
+                            'Conselho Nacional de Justiça',
+                            'Corregedoria Geral do Estado de Minas Gerais',
+                            'Corregedoria de Justiça'
+                        ].map((name, idx) => (
+                            <li
+                                key={idx}
+                                className="flex items-center gap-3 py-3 border-b border-outline/5 font-label text-sm font-bold text-on-surface uppercase tracking-wide"
+                            >
+                                <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                                {name}
+                            </li>
+                        ))}
+                    </ul>
 
-                        <div className="md:col-span-12 mt-8">
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                {[
-                                    'Justiça Comum',
-                                    'Justiça Federal',
-                                    'Juizados Especiais',
-                                    'Tribunais Superiores',
-                                    'Órgão Especial TJMG',
-                                    'Conselho Nacional de Justiça',
-                                    'Corregedoria Geral do Estado de Minas Gerais',
-                                    'Corregedoria de Justiça'
-                                ].map((name, idx) => (
-                                    <div
-                                        key={idx}
-                                        className="bg-white p-6 rounded text-center hover:shadow-lg hover:-translate-y-1 transition-all flex items-center justify-center min-h-[120px]"
-                                    >
-                                        <p className="font-label text-sm font-bold text-on-surface uppercase tracking-wide leading-snug">
-                                            {name}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+                    {/* Accordions */}
+                    <div className="flex flex-col gap-4">
 
                         {/* Public Law */}
-                        <div className="md:col-span-9 bg-primary-container p-12 flex flex-col justify-between transition-all hover:-translate-y-1 rounded-3xl">
-                            <div>
-                                <h3 className="font-headline text-3xl font-bold mb-8 text-white">Direito Público</h3>
+                        <details className="rounded-3xl overflow-hidden group">
+                            <summary className="bg-primary-container p-8 flex items-center justify-between cursor-pointer list-none">
+                                <h3 className="font-headline text-2xl font-bold text-white">Direito Público</h3>
+                                <span className="material-symbols-outlined text-white transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div className="bg-primary-container px-8 pb-8">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                     {[
                                         'Ações de improbidade administrativa',
@@ -56,12 +58,15 @@ export default function PracticeAreasColumns() {
                                     ))}
                                 </div>
                             </div>
-                        </div>
+                        </details>
 
                         {/* Private Law */}
-                        <div className="md:col-span-3 bg-white p-8 text-white flex flex-col justify-between transition-all hover:-translate-y-1 rounded-3xl">
-                            <div>
-                                <h3 className="font-headline text-3xl font-bold mb-8 text-on-surface">Direito Privado</h3>
+                        <details className="rounded-3xl overflow-hidden group">
+                            <summary className="bg-white p-8 flex items-center justify-between cursor-pointer list-none">
+                                <h3 className="font-headline text-2xl font-bold text-on-surface">Direito Privado</h3>
+                                <span className="material-symbols-outlined text-on-surface transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div className="bg-white px-8 pb-8">
                                 <div className="space-y-3">
                                     {[
                                         'Sucessões e inventários',
@@ -74,53 +79,58 @@ export default function PracticeAreasColumns() {
                                     ))}
                                 </div>
                             </div>
-                        </div>
+                        </details>
 
                         {/* Corporate Compliance */}
-                        <div className="md:col-span-12 bg-[#111c2e] text-white p-12 rounded-3xl flex flex-col lg:flex-row gap-12 transition-all hover:shadow-2xl">
-                            <div className="lg:w-1/2 space-y-6 flex flex-col justify-between">
-                                <div className="space-y-6">
-                                    <h3 className="font-headline text-3xl font-bold">Compliance para Empresas</h3>
-                                    <p className="text-white/70 leading-relaxed text-sm">
-                                        Atento às novidades legislativas e às recomendações e exigências mercadológicas, mormente àquela constante da Lei Anticorrupção (Lei n.º 12.846/13), de que empresas devem atestar sua seriedade mediante a apresentação de Programas de Integridade/Compliance.
-                                    </p>
-                                    <div className="space-y-3">
-                                        {[
-                                            { icon: 'menu_book', text: 'Elaboração de Códigos de Ética' },
-                                            { icon: 'diversity_3', text: 'Cursos e palestras corporativos' },
-                                            { icon: 'balance', text: 'Prevenção de violações à ordem jurídica' },
-                                            { icon: 'verified', text: 'Desenvolvimento de cultura ética nas organizações' },
-                                        ].map((item, idx) => (
-                                            <div key={idx} className="flex items-center gap-3">
-                                                <span
-                                                    className="material-symbols-outlined text-secondary text-base shrink-0"
-                                                    style={{ fontVariationSettings: "'FILL' 1" }}
-                                                >
-                                                    {item.icon}
-                                                </span>
-                                                <p className="text-white/60 text-sm">{item.text}</p>
-                                            </div>
-                                        ))}
+                        <details className="rounded-3xl overflow-hidden group">
+                            <summary className="bg-[#111c2e] p-8 flex items-center justify-between cursor-pointer list-none">
+                                <h3 className="font-headline text-2xl font-bold text-white">Compliance para Empresas</h3>
+                                <span className="material-symbols-outlined text-white transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div className="bg-[#111c2e] px-8 pb-8 flex flex-col lg:flex-row gap-12">
+                                <div className="lg:w-1/2 space-y-6 flex flex-col justify-between">
+                                    <div className="space-y-6">
+                                        <p className="text-white/70 leading-relaxed text-sm">
+                                            Atento às novidades legislativas e às recomendações e exigências mercadológicas, mormente àquela constante da Lei Anticorrupção (Lei n.º 12.846/13), de que empresas devem atestar sua seriedade mediante a apresentação de Programas de Integridade/Compliance.
+                                        </p>
+                                        <div className="space-y-3">
+                                            {[
+                                                { icon: 'menu_book', text: 'Elaboração de Códigos de Ética' },
+                                                { icon: 'diversity_3', text: 'Cursos e palestras corporativos' },
+                                                { icon: 'balance', text: 'Prevenção de violações à ordem jurídica' },
+                                                { icon: 'verified', text: 'Desenvolvimento de cultura ética nas organizações' },
+                                            ].map((item, idx) => (
+                                                <div key={idx} className="flex items-center gap-3">
+                                                    <span
+                                                        className="material-symbols-outlined text-secondary text-base shrink-0"
+                                                        style={{ fontVariationSettings: "'FILL' 1" }}
+                                                    >
+                                                        {item.icon}
+                                                    </span>
+                                                    <p className="text-white/60 text-sm">{item.text}</p>
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="flex items-start gap-3 border border-secondary/30 bg-secondary/5 rounded-2xl p-5">
-                                    <span
-                                        className="material-symbols-outlined text-secondary text-xl mt-0.5 shrink-0"
-                                        style={{ fontVariationSettings: "'FILL' 1" }}
-                                    >
-                                        info
-                                    </span>
-                                    <div className="space-y-2">
-                                        <p className="text-white/60 text-sm leading-relaxed">
-                                            Importante salientar que a existência de um Programa de Integridade é exigência para atuação no mercado internacional e, em alguns Estados, para a participação em procedimentos de Licitação.
-                                        </p>
-                                        <p className="text-white/60 text-sm leading-relaxed">
-                                            O escritório conta com profissionais e parceiros para elaboração dos Programas em <span className="text-secondary font-semibold">inglês</span> e <span className="text-secondary font-semibold">espanhol</span>.
-                                        </p>
+                                    <div className="flex items-start gap-3 border border-secondary/30 bg-secondary/5 rounded-2xl p-5">
+                                        <span
+                                            className="material-symbols-outlined text-secondary text-xl mt-0.5 shrink-0"
+                                            style={{ fontVariationSettings: "'FILL' 1" }}
+                                        >
+                                            info
+                                        </span>
+                                        <div className="space-y-2">
+                                            <p className="text-white/60 text-sm leading-relaxed">
+                                                Importante salientar que a existência de um Programa de Integridade é exigência para atuação no mercado internacional e, em alguns Estados, para a participação em procedimentos de Licitação.
+                                            </p>
+                                            <p className="text-white/60 text-sm leading-relaxed">
+                                                O escritório conta com profissionais e parceiros para elaboração dos Programas em <span className="text-secondary font-semibold">inglês</span> e <span className="text-secondary font-semibold">espanhol</span>.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </details>
 
                     </div>
                 </div>
