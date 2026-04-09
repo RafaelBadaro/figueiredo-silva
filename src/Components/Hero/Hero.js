@@ -11,7 +11,7 @@ export default function Hero() {
         />
       </div>
       
-      <div className="w-full px-12 relative z-10">
+      {/* <div className="w-full px-12 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-4xl">
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl text-white font-black leading-[1.1] tracking-tight mb-8">
@@ -34,9 +34,9 @@ export default function Hero() {
               Nossa História
             </a>
           </div>
-        </div>        </div>        </div>
+        </div>        </div>        </div> */}
 
-      <div className="absolute bottom-0 right-0 w-1/3 h-1 bg-secondary"></div>
+      {/* <div className="absolute bottom-0 right-0 w-1/3 h-1 bg-secondary"></div> */}
     </section>
   );
 }
