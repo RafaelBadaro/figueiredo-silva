@@ -11,7 +11,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="w-full px-12 relative z-10">
+      {/* <div className="w-full px-12 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-4xl">
             <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl text-white font-black leading-[1.1] tracking-tight mb-8">
@@ -26,21 +26,9 @@ export default function Hero() {
             <p className="text-white/80 text-xl md:text-2xl max-w-2xl mb-12 font-light leading-relaxed">
               Da tradição do Dr. José de Figueiredo Silva à advocacia moderna. Um sobrenome de peso, um compromisso inabalável com a justiça.
             </p>
-            {/* <div className="flex flex-col sm:flex-row gap-6">
-            <a
-              href="#contato"
-              className="bg-secondary text-white px-10 py-5 rounded font-label font-bold uppercase tracking-widest text-center hover:brightness-110 transition-all"
-            >
-              Agendar Consultoria
-            </a>
-            <a
-              href="#sobre-nos"
-              className="border border-white/30 text-white px-10 py-5 rounded font-label font-bold uppercase tracking-widest text-center hover:bg-white/10 transition-all"
-            >
-              Nossa História
-            </a>
-          </div> */}
-          </div>        </div>        </div>
+          </div>
+        </div>
+      </div> */}
 
     </section>
   );

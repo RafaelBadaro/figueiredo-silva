@@ -41,7 +41,7 @@ export default function PracticeAreasColumns() {
                                 <span className="material-symbols-outlined text-white transition-transform group-open:rotate-180">expand_more</span>
                             </summary>
                             <div className="bg-primary-container px-8 pb-8">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <ul className="grid grid-cols-1 md:grid-cols-2">
                                     {[
                                         'Ações de improbidade administrativa',
                                         'Ações civis públicas',
@@ -52,11 +52,12 @@ export default function PracticeAreasColumns() {
                                         'Responsabilidade civil do Estado',
                                         'Ações de indenização'
                                     ].map((item, idx) => (
-                                        <div key={idx} className="flex items-center gap-2.5 p-3 rounded-xl bg-white/10 border border-white/10">
-                                            <p className="text-sm text-white/80 leading-snug">{item}</p>
-                                        </div>
+                                        <li key={idx} className="flex items-center gap-3 py-3 border-b border-white/5 text-sm text-white/80 uppercase tracking-wide font-label font-bold">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0" />
+                                            {item}
+                                        </li>
                                     ))}
-                                </div>
+                                </ul>
                             </div>
                         </details>
 
@@ -67,17 +68,18 @@ export default function PracticeAreasColumns() {
                                 <span className="material-symbols-outlined text-on-surface transition-transform group-open:rotate-180">expand_more</span>
                             </summary>
                             <div className="bg-white px-8 pb-8">
-                                <div className="space-y-3">
+                                <ul>
                                     {[
                                         'Sucessões e inventários',
                                         'Direito do consumidor',
                                         'Responsabilidade civil'
                                     ].map((item, idx) => (
-                                        <div key={idx} className="flex items-center justify-center p-3 rounded-xl bg-surface-variant/40 border border-outline/10">
-                                            <span className="text-sm uppercase tracking-wide font-label text-center text-on-surface-variant">{item}</span>
-                                        </div>
+                                        <li key={idx} className="flex items-center gap-3 py-3 border-b border-outline/5 text-sm text-on-surface-variant uppercase tracking-wide font-label font-bold">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                                            {item}
+                                        </li>
                                     ))}
-                                </div>
+                                </ul>
                             </div>
                         </details>
 
