@@ -10,17 +10,23 @@ export default function Hero() {
           src="/capa-hero.jpg"
         />
       </div>
-      
-      {/* <div className="w-full px-12 relative z-10">
+
+      <div className="w-full px-12 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-4xl">
-          <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl text-white font-black leading-[1.1] tracking-tight mb-8">
-            Excelência Jurídica em <span className="text-secondary">Territórios</span> Complexos.
-          </h1>
-          <p className="text-white/80 text-xl md:text-2xl max-w-2xl mb-12 font-light leading-relaxed">
-            Combinamos o rigor analítico de sete décadas com a agilidade necessária para navegar na vanguarda do direito contemporâneo.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6">
+            <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl text-white font-black leading-[1.1] tracking-tight mb-8">
+              Mais de <span className="text-secondary relative inline-block
+  after:content-[''] after:absolute after:left-0 after:bottom-0
+  after:h-[2px] after:w-0 after:bg-secondary
+  after:transition-all after:duration-500
+  hover:after:w-full">
+                70&nbsp;anos
+              </span> de advocacia.
+            </h1>
+            <p className="text-white/80 text-xl md:text-2xl max-w-2xl mb-12 font-light leading-relaxed">
+              Da tradição do Dr. José de Figueiredo Silva à advocacia moderna. Um sobrenome de peso, um compromisso inabalável com a justiça.
+            </p>
+            {/* <div className="flex flex-col sm:flex-row gap-6">
             <a
               href="#contato"
               className="bg-secondary text-white px-10 py-5 rounded font-label font-bold uppercase tracking-widest text-center hover:brightness-110 transition-all"
@@ -33,10 +39,9 @@ export default function Hero() {
             >
               Nossa História
             </a>
-          </div>
-        </div>        </div>        </div> */}
+          </div> */}
+          </div>        </div>        </div>
 
-      {/* <div className="absolute bottom-0 right-0 w-1/3 h-1 bg-secondary"></div> */}
     </section>
   );
 }
