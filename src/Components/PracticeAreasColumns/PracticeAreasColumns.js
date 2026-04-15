@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function PracticeAreasColumns() {
     return (
-        <section className="py-32 bg-surface-container-low px-12 scroll-mt-2 md:scroll-mt-24" id="areas">
+        <section className="py-32 bg-surface-container-low px-4 md:px-12 scroll-mt-2 md:scroll-mt-24" id="areas">
             <div className="w-full">
                 <div className="max-w-7xl mx-auto">
                     <div className="mb-8">
@@ -123,13 +123,13 @@ export default function PracticeAreasColumns() {
                                 <h3 className="font-headline text-2xl font-bold text-white">Compliance para Empresas</h3>
                                 <span className="material-symbols-outlined text-white transition-transform group-open:rotate-180">expand_more</span>
                             </summary>
-                            <div className="bg-[#111c2e] px-8 pb-8 flex flex-col lg:flex-row gap-12">
+                            <div className="font-headline bg-[#111c2e] px-8 pb-8 flex flex-col lg:flex-row gap-12">
                                 <div className="lg:w-1/2 space-y-6 flex flex-col justify-between">
-                                    <div className="space-y-6">
-                                        <p className="text-white/70 leading-relaxed text-sm">
-                                            Atento às novidades legislativas e às recomendações e exigências mercadológicas, mormente àquela constante da Lei Anticorrupção (Lei n.º 12.846/13), de que empresas devem atestar sua seriedade mediante a apresentação de Programas de Integridade/Compliance.
+                                    <div className="space-y-4">
+                                        <p className="text-white leading-relaxed text-sm text-justify">
+                                            Atentamos às novidades legislativas e às recomendações e exigências mercadológicas, mormente aquelas constantes na Lei Anticorrupção (Lei n.º 12.846/13).
                                         </p>
-                                        <div className="space-y-3">
+                                        <div className="space-y-2">
                                             {[
                                                 { icon: 'menu_book', text: 'Elaboração de Códigos de Ética' },
                                                 { icon: 'diversity_3', text: 'Cursos e palestras corporativos' },
@@ -143,7 +143,7 @@ export default function PracticeAreasColumns() {
                                                     >
                                                         {item.icon}
                                                     </span>
-                                                    <p className="text-white/60 text-sm">{item.text}</p>
+                                                    <p className="text-white text-sm">{item.text}</p>
                                                 </div>
                                             ))}
                                         </div>
@@ -156,11 +156,11 @@ export default function PracticeAreasColumns() {
                                             info
                                         </span>
                                         <div className="space-y-2">
-                                            <p className="text-white/60 text-sm leading-relaxed">
+                                            <p className="text-white text-sm leading-relaxed">
                                                 Importante salientar que a existência de um Programa de Integridade é exigência para atuação no mercado internacional e, em alguns Estados, para a participação em procedimentos de Licitação.
                                             </p>
-                                            <p className="text-white/60 text-sm leading-relaxed">
-                                                O escritório conta com profissionais e parceiros para elaboração dos Programas em <span className="text-secondary font-semibold">inglês</span> e <span className="text-secondary font-semibold">espanhol</span>.
+                                            <p className="text-white text-sm leading-relaxed">
+                                                O escritório conta com profissionais e parceiros para elaboração dos Programas em <span className="text-secondary font-semibold">inglês</span>, <span className="text-secondary font-semibold">espanhol</span> e <span className="text-secondary font-semibold">francês</span>.
                                             </p>
                                         </div>
                                     </div>
