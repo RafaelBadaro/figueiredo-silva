@@ -11,7 +11,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#faf8ff] dark:bg-[#050F21] flex justify-between items-center px-12 py-6 w-full transition-all duration-300 shadow-sm">
+   <nav className="fixed top-0 w-full z-50 bg-[#faf8ff] dark:bg-[#050F21] flex justify-between items-center px-12 md:px-48 py-6 transition-all duration-300 shadow-sm">
       <div className="flex items-center">
         <img
           src="/figueiredo-silva-logo.png"
