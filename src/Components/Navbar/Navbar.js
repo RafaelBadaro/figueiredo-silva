@@ -4,10 +4,10 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Início', href: '#inicio' },
-    { label: 'Áreas de Atuação', href: '#areas' },
-    { label: 'Quem somos', href: '#quem-somos' },
-    { label: 'Contato', href: '#contato' },
+    { label: 'INÍCIO', href: '#inicio' },
+    { label: 'ÁREAS DE ATUAÇÃO', href: '#areas' },
+    { label: 'QUEM SOMOS', href: '#quem-somos' },
+    { label: 'CONTATO', href: '#contato' },
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function Navbar() {
           <a
             key={link.label}
             href={link.href}
-            className="text-[#050F21] dark:text-white/70 hover:text-[#775a00] font-headline font-bold tracking-tight transition-colors duration-300"
+            className="text-lg text-[#050F21] dark:text-white/70 hover:text-[#775a00] font-headline font-bold tracking-tight transition-colors duration-300"
           >
             {link.label}
           </a>

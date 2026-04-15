@@ -62,9 +62,9 @@ module.exports = {
         "full": "0.75rem"
       },
       fontFamily: {
-        headline: ["Noto Serif"],
-        body: ["Public Sans"],
-        label: ["Work Sans"]
+        headline: ["Noto Serif", "serif"],
+        body: ["Public Sans", "sans-serif"],
+        label: ["Work Sans", "sans-serif"],
       }
     },
   },
