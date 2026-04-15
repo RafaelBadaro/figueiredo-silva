@@ -7,34 +7,34 @@ export default function About() {
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 items-center">
                     {/* Timeline */}
                     <div className="lg:w-1/2">
-                        <h2 className="font-headline text-4xl md:text-6xl text-on-surface font-bold leading-tight mb-8">
+                        <h2 className="font-headline text-4xl md:text-6xl text-on-surface font-bold leading-tight mb-8 uppercase">
                             Quem somos
                         </h2>
                         <div className="space-y-0">
                             {[
                                 {
                                     period: '1908 – 1978',
-                                    name: 'José de Figueiredo Silva',
+                                    name: 'Dr. José de Figueiredo Silva',
                                     generation: '1ª Geração',
-                                    desc: 'Figura emblemática da advocacia mineira. Recebeu de Juscelino Kubitschek o apelido de "Advogado Geral contra o Estado". Escrevia peças processuais com a precisão de um poeta.'
+                                    desc: 'Foi uma figura emblemática marcou toda uma geração de advogados. Ele recebeu o apelido de “Advogado Geral contra o Estado” de Juscelino Kubitschek, em face do patrocínio de várias demandas de servidores estaduais. José de Figueiredo Silva costumava escrever peças processuais como se fossem poesia, sendo que algumas delas foram sentenciadas da mesma forma poética por magistrados mineiros.'
                                 },
                                 {
                                     period: '1940 – 1980',
-                                    name: 'Erasmo Barros de Figueiredo Silva',
+                                    name: 'Dr. Erasmo Barros de Figueiredo Silva',
                                     generation: '2ª Geração',
-                                    desc: 'Herdou o gosto por advogar contra o Poder Público e o apreço pela literatura. Atuou com dedicação perante a OAB e na luta contra a Ditadura.'
+                                    desc: 'Dr. Erasmo trabalhou com muita dedicação em prol de toda a classe de advogados, perante a OAB e na luta contra a Ditadura. No dia de seu falecimento, o expediente do TJMG foi suspenso, em homenagem a sua memória. PORTARIA Nº 280/1980'
                                 },
                                 {
-                                    period: '1966 · 1968',
-                                    name: 'Cristiane & André Campos',
+                                    period: '',
+                                    name: 'Dra. Cristiane Campos de Figueiredo Silva & Dr. André Campos de Figueiredo Silva',
                                     generation: '3ª Geração',
-                                    desc: 'Mantêm o mesmo espírito combativo e altaneiro, perpetuando a forte ligação familiar com o Direito e a advocacia mineira.'
+                                    desc: 'Representando a terceira geração, Dra. Cristiane e Dr. André atuam com excelência e comprometimento, consolidando a reputação do escritório com uma advocacia técnica, estratégica e artesanal.'
                                 },
                                 {
-                                    period: '2025 · Presente',
-                                    name: 'Laura Figueiredo Silva',
+                                    period: '',
+                                    name: 'Dra. Laura Fernandes de Figueiredo Silva',
                                     generation: '4ª Geração',
-                                    desc: 'Coisinha mais linda di todas gente'
+                                    desc: 'Mantêm o mesmo espírito combativo e altaneiro, perpetuando a forte ligação familiar com o Direito e a advocacia mineira.'
                                 }
                             ].map((item, idx, arr) => (
                                 <div key={idx} className="flex gap-6">
@@ -44,8 +44,17 @@ export default function About() {
                                     </div>
                                     <div className={`pb-8 ${idx === arr.length - 1 ? 'pb-0' : ''}`}>
                                         <span className="text-xs font-label font-bold uppercase tracking-[0.2em] text-secondary">{item.generation} · {item.period}</span>
-                                        <h4 className="font-headline text-lg font-bold text-on-surface mt-1 mb-2">{item.name}</h4>
-                                        <p className="text-on-surface-variant text-sm leading-relaxed">{item.desc}</p>
+                                        <h4 className="font-headline text-lg font-bold text-on-surface mt-1 mb-2">
+                                            {item.name.includes(' & ') ? (
+                                                <>
+                                                    {item.name.split(' & ')[0]} & <br />
+                                                    {item.name.split(' & ')[1]}
+                                                </>
+                                            ) : (
+                                                item.name
+                                            )}
+                                        </h4>
+                                        <p className="text-on-surface-variant text-sm leading-relaxed text-justify">{item.desc}</p>
                                     </div>
                                 </div>
                             ))}
