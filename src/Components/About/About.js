@@ -74,7 +74,7 @@ export default function About() {
                 <section className="py-32 px-4 md:px-12 bg-surface-container-low">
                     <div className="max-w-7xl mx-auto">
                         <div className="mb-12">
-                            <h2 className="font-headline text-4xl md:text-5xl text-on-surface font-black">Nossa equipe</h2>
+                            <h2 className="font-headline text-4xl md:text-5xl text-on-surface font-black uppercase">Nossa equipe</h2>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -98,7 +98,7 @@ export default function About() {
                                 <div key={idx} className="bg-white rounded-3xl p-8 flex flex-col gap-6 border border-outline/5">
                                     <div className="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center shrink-0">
                                         <span className="font-headline font-bold text-lg text-white">{person.initials}</span>
-                                    </div>
+</div>
                                     <div className="space-y-2">
                                         <h3 className="font-headline text-lg font-bold text-on-surface leading-snug">{person.name}</h3>
                                         <p className="text-sm text-on-surface-variant leading-relaxed">{person.desc}</p>
