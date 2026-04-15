@@ -2,14 +2,15 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="relative w-screen min-h-screen flex items-center pt-24 overflow-hidden" id="inicio">
-      <div className="absolute inset-0 z-0">
+    <section className="relative w-screen min-h-screen  bg-[#faf8ff] dark:bg-[#050F21] flex items-center pt-24 overflow-hidden" id="inicio">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <img
           alt="Escritório de Advocacia Clássico"
-          className="w-full h-full object-cover brightness-[0.4]"
+          className="w-full h-full object-cover brightness-[0.4] animate-slide-in"
           src="/capa-hero.jpg"
         />
       </div>
+
 
       {/* <div className="w-full px-12 relative z-10">
         <div className="max-w-7xl mx-auto">
@@ -29,6 +30,21 @@ export default function Hero() {
           </div>
         </div>
       </div> */}
+
+      <style jsx>{`
+        @keyframes slideIn {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+
+        .animate-slide-in {
+          animation: slideIn 1.2s ease-out forwards;
+        }
+      `}</style>
 
     </section>
   );
