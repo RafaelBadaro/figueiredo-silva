@@ -36,18 +36,22 @@ export default function Footer() {
                     <p className="font-label text-[10px] uppercase tracking-widest text-white/40">
                         © 2026 Todos os direitos reservados – Figueiredo Silva Advogados Associados
                     </p>
+
+                    <p className="font-label text-[10px] uppercase tracking-widest text-white/40">
+                       Feito por: <a href="https://www.linkedin.com/in/rafael-badaro/" target="_blank" rel="noreferrer" className="text-white hover:text-secondary transition-colors">Rafael Badaró</a>
+                    </p>
                 </div>
 
                 <div className="space-y-4 text-sm text-white/70">
                     <div>
                         <p className="font-label uppercase tracking-[0.35em] text-white/40 mb-1">Email</p>
-                        <a href="mailto:figueiredosilva@terra.com.br" className="text-white hover:text-secondary transition-colors">
-                            figueiredosilva@terra.com.br
+                        <a href="mailto:laura@figueiredosilva.com" className="text-white hover:text-secondary transition-colors">
+                            laura@figueiredosilva.com
                         </a>
                     </div>
                     <div>
                         <p className="font-label uppercase tracking-[0.35em] text-white/40 mb-1">Endereço</p>
-                        <p>Av. do Contorno, 8000 – sala 1709, Santo Agostinho, Belo Horizonte – MG, 30110-932</p>
+                        <p>Av. do Contorno, 8000 – sala 1708 e 1709, Santo Agostinho, Belo Horizonte – MG, 30110-932</p>
                     </div>
                 </div>
             </div>

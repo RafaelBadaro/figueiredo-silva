@@ -26,7 +26,7 @@ export default function FormContact() {
     };
 
     const handleSubmit = () => {
-        const mailto = `mailto:figueiredosilva@terra.com.br?subject=${encodeURIComponent(fields.assunto)}&body=${encodeURIComponent(`Nome: ${fields.nome}\nE-mail: ${fields.email}\n\n${fields.mensagem}`)}`;
+        const mailto = `mailto:laura@figueiredosilva.com?subject=${encodeURIComponent(fields.assunto)}&body=${encodeURIComponent(`Nome: ${fields.nome}\nE-mail: ${fields.email}\n\n${fields.mensagem}`)}`;
         window.location.href = mailto;
     };
 
