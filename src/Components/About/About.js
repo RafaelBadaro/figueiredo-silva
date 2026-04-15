@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
     return (
-        <section className="py-32 px-4 md:px-12 bg-surface" id="quem-somos">
+        <section className="py-32 px-4 md:px-12 bg-surface scroll-mt-2 md:scroll-mt-24" id="quem-somos">
             <div className="w-full">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 items-center">
                     {/* Timeline */}

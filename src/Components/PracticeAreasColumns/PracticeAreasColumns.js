@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function PracticeAreasColumns() {
     return (
-        <section className="py-32 bg-surface-container-low px-12" id="areas">
+        <section className="py-32 bg-surface-container-low px-12 scroll-mt-2 md:scroll-mt-24" id="areas">
             <div className="w-full">
                 <div className="max-w-7xl mx-auto">
                     <div className="mb-8">

@@ -2,7 +2,7 @@ import FormContact from './FormContact';
 
 export default function Contact() {
     return (
-        <section className="py-32 px-6 md:px-12 bg-white" id="contato">
+        <section className="py-32 px-6 md:px-12 bg-white scroll-mt-2 md:scroll-mt-24" id="contato">
             <div className="w-full">
                 <div className="w-full max-w-7xl mx-auto space-y-10">
 
