@@ -6,30 +6,18 @@ export default function PracticeAreasColumns() {
             <div className="w-full">
                 <div className="max-w-7xl mx-auto">
                     <div className="mb-8">
-                        <h2 className="font-headline text-4xl md:text-5xl text-on-surface font-black">Áreas de Atuação</h2>
+                        <h2 className="font-headline text-4xl md:text-5xl text-primary-container font-black uppercase">
+                            Áreas de Atuação
+                        </h2>
                     </div>
 
                     {/* Areas de atuacao */}
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-12">
-                        {[
-                            'Justiça Comum',
-                            'Justiça Federal',
-                            'Juizados Especiais',
-                            'Tribunais Superiores',
-                            'Órgão Especial TJMG',
-                            'Conselho Nacional de Justiça',
-                            'Corregedoria Geral do Estado de Minas Gerais',
-                            'Corregedoria de Justiça'
-                        ].map((name, idx) => (
-                            <li
-                                key={idx}
-                                className="flex items-center gap-3 py-3 border-b border-outline/5 font-label text-sm font-bold text-on-surface uppercase tracking-wide"
-                            >
-                                <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                                {name}
-                            </li>
-                        ))}
-                    </ul>
+                    <p className="font-headline text-base text-justify text-on-surface/80 leading-relaxed mb-12 max-w-2xl">
+                        Atuamos na Justiça Comum, Justiça Federal e Juizados Especiais, bem como
+                        nos Tribunais Superiores e Órgão Especial do TJMG. Também
+                        representamos interesses junto ao Conselho Nacional de Justiça,
+                        Corregedorias do Estado de Minas Gerais e Corregedoria Geral de Justiça.
+                    </p>
 
                     {/* Accordions */}
                     <div className="flex flex-col gap-4">
@@ -37,23 +25,43 @@ export default function PracticeAreasColumns() {
                         {/* Public Law */}
                         <details className="rounded-3xl overflow-hidden group">
                             <summary className="bg-primary-container p-8 flex items-center justify-between cursor-pointer list-none">
-                                <h3 className="font-headline text-2xl font-bold text-white">Direito Público</h3>
+                                <h3 className="font-headline text-2xl font-bold text-white">
+                                    Direito Público
+                                </h3>
                                 <span className="material-symbols-outlined text-white transition-transform group-open:rotate-180">expand_more</span>
                             </summary>
                             <div className="bg-primary-container px-8 pb-8">
+                                <div className="flex flex-col md:flex-row md:flex-nowrap gap-3 mb-4 text-sm font-semibold text-on-surface">
+                                    {[
+                                        'Administrativo',
+                                        'Constitucional',
+                                        'Previdenciário',
+                                        'Tributário'
+                                    ].map((item, i) => (
+                                        <span
+                                            key={i}
+                                            className="font-headline px-3 py-1.5 rounded-full bg-surface-variant border border-outline/10"
+                                        >
+                                            {item}
+                                        </span>
+                                    ))}
+                                </div>
+
                                 <ul className="grid grid-cols-1 md:grid-cols-2">
                                     {[
-                                        'Ações de improbidade administrativa',
-                                        'Ações civis públicas',
-                                        'Mandados de segurança',
-                                        'Processos administrativos disciplinares',
+                                        'Ação de improbidade administrativa',
+                                        'Mandado de segurança',
+                                        'Ação civil pública',
+                                        'Processo administrativo disciplinar',
                                         'Ações de concurso público',
-                                        'Ações de ressarcimento ao erário',
-                                        'Responsabilidade civil do Estado',
-                                        'Ações de indenização'
+                                        'Responsabilidade civil do Estado e União',
+                                        'Ação de ressarcimento ao erário',
+                                        'Ação de indenização',
+                                        'Ação anulatória de débito',
+                                        'Defesa em execução fiscal'
                                     ].map((item, idx) => (
-                                        <li key={idx} className="flex items-center gap-3 py-3 border-b border-white/5 text-sm text-white/80 uppercase tracking-wide font-label font-bold">
-                                            <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0" />
+                                        <li key={idx} className="flex items-center gap-3 py-3 text-sm text-white uppercase tracking-wide font-headline font-bold">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-secondary shrink-0" />
                                             {item}
                                         </li>
                                     ))}
@@ -68,13 +76,39 @@ export default function PracticeAreasColumns() {
                                 <span className="material-symbols-outlined text-on-surface transition-transform group-open:rotate-180">expand_more</span>
                             </summary>
                             <div className="bg-white px-8 pb-8">
-                                <ul>
+                                <div className="flex flex-col md:flex-row md:flex-nowrap gap-3 mb-4 text-sm font-semibold text-on-surface">
                                     {[
-                                        'Sucessões e inventários',
-                                        'Direito do consumidor',
-                                        'Responsabilidade civil'
+                                        'Civil',
+                                        'Consumidor',
+                                        'Família',
+                                        'Sucessões',
+                                        'Empresarial'
+                                    ].map((item, i) => (
+                                        <span
+                                            key={i}
+                                            className="font-headline px-3 py-1.5 rounded-full bg-surface-variant border border-outline/10"
+                                        >
+                                            {item}
+                                        </span>
+                                    ))}
+                                </div>
+
+                               <ul className="grid grid-cols-1 md:grid-cols-2">
+                                    {[
+                                        'Inventário extrajudicial e judicial',
+                                        'Contratos',
+                                        'Reintegração de posse',
+                                        'Ação de indenização',
+                                        'Usucapião',
+                                        'Responsabilidade civil',
+                                        'Despejo',
+                                        'Execução de título extrajudicial',
+                                        'Divórcio consensual e litigioso',
+                                        'Embargos de terceiro',
+                                        'Ação de alimentos',
+                                        'Ação monitória',
                                     ].map((item, idx) => (
-                                        <li key={idx} className="flex items-center gap-3 py-3 border-b border-outline/5 text-sm text-on-surface-variant uppercase tracking-wide font-label font-bold">
+                                        <li key={idx} className="flex items-center gap-3 py-3 text-sm text-on-surface-variant uppercase tracking-wide font-headline font-bold">
                                             <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                                             {item}
                                         </li>
